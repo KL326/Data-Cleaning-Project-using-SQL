@@ -7,10 +7,10 @@ Welcome to the **Nashville Housing Data Cleaning Project**! This project focuses
 ## 🚀 Project Overview
 
 This project involves cleaning raw housing data to improve consistency and usability. The cleaning tasks include:
-- Standardizing date formats 📅
+- Standardising date formats 📅
 - Filling in missing property addresses 🏡
 - Splitting address fields for better usability 📍
-- Standardizing categorical values 🔄
+- Standardising categorical values 🔄
 - Removing duplicate records 🚮
 - Dropping unnecessary columns ❌
 
@@ -19,16 +19,16 @@ This project involves cleaning raw housing data to improve consistency and usabi
 ## 🔧 Tools and Techniques
 
 - **SQL (Structured Query Language)**:  
-  - 🛠️ *Data Cleaning*: Standardized formats, handled missing values, and ensured consistency.  
-  - 🔍 *Data Transformation*: Split fields and standardized categorical data.  
-  - 🚀 *Performance Optimization*: Removed redundant records and dropped unused columns.  
+  - 🛠️ *Data Cleaning*: Standardised formats, handled missing values, and ensured consistency.  
+  - 🔍 *Data Transformation*: Split fields and standardised categorical data.  
+  - 🚀 *Performance Optimisation*: Removed redundant records and dropped unused columns.  
 
 ---
 
 ## 📂 Data Cleaning Steps
 
-### 1️⃣ Standardizing Date Format
-- Added a new column `SaleDateConverted` and converted date values into a standardized format.
+### 1️⃣ Standardising Date Format
+- Added a new column `SaleDateConverted` and converted date values into a standardised format.
 
 ### 2️⃣ Handling Missing Property Addresses
 - Used `ParcelID` to fill in missing `PropertyAddress` values from other entries.
@@ -37,14 +37,14 @@ This project involves cleaning raw housing data to improve consistency and usabi
 - Extracted `PropertyAddress` into `PropertySplitAddress` and `PropertySplitCity`.
 - Extracted `OwnerAddress` into `OwnerSplitAddress`, `OwnerSplitCity`, and `OwnerSplitState`.
 
-### 4️⃣ Standardizing "Sold as Vacant" Field
+### 4️⃣ Standardising "Sold as Vacant" Field
 - Replaced 'Y' and 'N' with 'Yes' and 'No'.
 
 ### 5️⃣ Removing Duplicate Records
 - Used `ROW_NUMBER()` to identify and delete duplicate rows.
 
 ### 6️⃣ Dropping Unnecessary Columns
-- Removed `OwnerAddress`, `TaxDistrict`, `PropertyAddress`, and `SaleDate` to optimize the dataset.
+- Removed `OwnerAddress`, `TaxDistrict`, `PropertyAddress`, and `SaleDate` to optimise the dataset.
 
 ---
 
